@@ -1,0 +1,114 @@
+@relation names
+
+@attribute Names {Amira,Kawkab,Faheem,Faisal,Adam,Omar,Layla,Dawud,Bashir,Afeefah,Asim,Ismail,Hussein,Bushra,Nida,Iman,Hala,Naeema,Fareed,Shakir,Ghaliya,BadrUddin,Aneesa,Sharifa,Aakifa,Ubaid,Husna,Arif,Safa,Faris,Aamir,Farida,Shahid,Huda,Mujtaba,Eisa,Nadia,Afra,Sharif,Aziza,Umair,Ahmad,Irfan,Shuaib,Amal,Murad,Furqan,Abida,Muneeb,Khadijah,Abeer,Areej,Habib,Urwa,Aida,Afia,Adeeb,Noor,Iffat,Nafisa,Farhan,Aatika,Burhan,Maleeha,Munira,Zeenat,Maymouna,Saadiya,Inaya,Firdous,Khalida,Luqman,Almas,Qamar,Uqbah,Falak,AbdulAlim,Arshad,Azra,Amjad,Khawlah,Akram,Hadiyya,Asiyah,Hashim,Jamila,Ajmal,Anas,Adeela,Aqeel,Raniya,Munir,Maha,Imran,Asma,Hamza,Bilal,Anees,Amina}
+@attribute Length numeric
+@attribute First {A,K,F,O,L,D,B,I,H,N,S,G,U,M,E,Z,Q,J,R}
+@attribute Last {a,b,m,l,r,d,h,n,f,s,j,t,k}
+@attribute Sum_ASCII numeric
+@attribute Vowels numeric
+@attribute Gender numeric
+@attribute Consonants numeric
+@attribute Class {-,+}
+@attribute Class10 {0, 1}
+
+@data
+Amira,5,A,a,490,3,1,2,-,0
+Kawkab,6,K,b,593,2,1,4,+,1
+Faheem,6,F,m,582,3,0,3,+,1
+Faisal,6,F,l,592,3,0,3,+,1
+Adam,4,A,m,371,2,0,2,-,0
+Omar,4,O,r,399,2,0,2,-,0
+Layla,5,L,a,499,2,1,3,+,1
+Dawud,5,D,d,501,2,0,3,+,1
+Bashir,6,B,r,601,2,0,4,+,1
+Afeefah,7,A,h,672,4,1,3,-,0
+Asim,4,A,m,394,2,0,2,-,0
+Ismail,6,I,l,607,3,0,3,-,0
+Hussein,7,H,n,735,3,0,4,+,1
+Bushra,6,B,a,613,2,1,4,+,1
+Nida,4,N,a,380,2,1,2,+,1
+Iman,4,I,n,389,2,1,2,-,0
+Hala,4,H,a,374,2,1,2,+,1
+Naeema,6,N,a,583,4,1,2,+,1
+Fareed,6,F,d,583,3,0,3,+,1
+Shakir,6,S,r,610,2,0,4,-,0
+Ghaliya,7,G,a,703,3,1,4,-,0
+BadrUddin,9,B,n,877,3,0,6,+,1
+Aneesa,6,A,a,589,4,1,2,-,0
+Sharifa,7,S,a,702,3,1,4,-,0
+Aakifa,6,A,a,573,4,1,2,+,1
+Ubaid,5,U,d,485,3,0,2,-,0
+Husna,5,H,a,511,2,1,3,+,1
+Arif,4,A,f,386,2,0,2,-,0
+Safa,4,S,a,379,2,1,2,+,1
+Faris,5,F,s,501,2,0,3,+,1
+Aamir,5,A,r,490,3,0,2,+,1
+Farida,6,F,a,583,3,1,3,+,1
+Shahid,6,S,d,593,2,0,4,-,0
+Huda,4,H,a,386,2,1,2,+,1
+Mujtaba,7,M,a,708,3,0,4,+,1
+Eisa,4,E,a,386,3,0,1,+,1
+Nadia,5,N,a,477,3,1,2,+,1
+Afra,4,A,a,378,2,1,2,-,0
+Sharif,6,S,f,605,2,0,4,-,0
+Aziza,5,A,a,511,3,1,2,-,0
+Umair,5,U,r,510,3,0,2,-,0
+Ahmad,5,A,d,475,2,0,3,-,0
+Irfan,5,I,n,496,2,0,3,-,0
+Shuaib,6,S,b,604,3,0,3,-,0
+Amal,4,A,l,379,2,1,2,-,0
+Murad,5,M,d,505,2,0,3,+,1
+Furqan,6,F,n,621,2,0,4,+,1
+Abida,5,A,a,465,3,1,2,-,0
+Muneeb,6,M,b,604,3,0,3,+,1
+Khadijah,8,K,h,788,3,1,5,-,0
+Abeer,5,A,r,479,3,1,2,-,0
+Areej,5,A,j,487,3,1,2,-,0
+Habib,5,H,b,470,2,0,3,+,1
+Urwa,4,U,a,415,2,1,2,-,0
+Aida,4,A,a,367,3,1,1,+,1
+Afia,4,A,a,369,3,1,1,-,0
+Adeeb,5,A,b,465,3,0,2,-,0
+Noor,4,N,r,414,2,1,2,+,1
+Iffat,5,I,t,490,2,1,3,-,0
+Nafisa,6,N,a,594,3,1,3,+,1
+Farhan,6,F,n,592,2,0,4,+,1
+Aatika,6,A,a,587,4,1,2,+,1
+Burhan,6,B,n,608,2,0,4,+,1
+Maleeha,7,M,a,685,4,1,3,+,1
+Munira,6,M,a,620,3,1,3,+,1
+Zeenat,6,Z,t,615,3,1,3,+,1
+Maymouna,8,M,a,839,4,1,4,+,1
+Saadiya,7,S,a,700,4,1,3,+,1
+Inaya,5,I,a,498,3,1,2,-,0
+Firdous,7,F,s,732,3,1,4,+,1
+Khalida,7,K,a,686,3,1,4,-,0
+Luqman,6,L,n,622,2,0,4,+,1
+Almas,5,A,s,494,2,1,3,-,0
+Qamar,5,Q,r,498,2,0,3,+,1
+Abeer,5,A,r,479,3,1,2,-,0
+Uqbah,5,U,h,497,2,0,3,-,0
+Falak,5,F,k,479,2,0,3,+,1
+AbdulAlim,9,A,m,875,4,0,5,-,0
+Arshad,6,A,d,595,2,0,4,-,0
+Azra,4,A,a,398,2,1,2,-,0
+Amjad,5,A,d,477,2,0,3,-,0
+Khawlah,7,K,h,704,2,1,5,-,0
+Akram,5,A,m,492,2,0,3,-,0
+Hadiyya,7,H,a,713,3,1,4,+,1
+Asiyah,6,A,h,607,3,1,3,-,0
+Hashim,6,H,m,602,2,0,4,+,1
+Jamila,6,J,a,590,3,1,3,+,1
+Ajmal,5,A,l,485,2,0,3,-,0
+Anas,4,A,s,387,2,0,2,-,0
+Adeela,6,A,a,572,4,1,2,-,0
+Aqeel,5,A,l,488,3,0,2,-,0
+Raniya,6,R,a,612,3,1,3,+,1
+Munir,5,M,r,523,2,0,3,+,1
+Maha,4,M,a,375,2,1,2,+,1
+Imran,5,I,n,503,2,0,3,-,0
+Asma,4,A,a,386,2,1,2,-,0
+Hamza,5,H,a,497,2,0,3,+,1
+Bilal,5,B,l,484,2,0,3,+,1
+Anees,5,A,s,492,3,0,2,-,0
+Amina,5,A,a,486,3,1,2,-,0
